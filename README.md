@@ -1,6 +1,37 @@
 # Welcome
 
-The goal of this project is to scaffold a very quick and dirty Python project using suggested best practices from ChatGPT 4.
+The goal of this project is to scaffold a very quick and dirty Python project using suggested best practices from ChatGPT 4:
+
+```sh
+Welcome to Rock, Paper, Scissors!
+Choose rock, paper, or scissors (or 'q' to quit): rock
+Computer chose: rock
+Draw
+Score - Player: 0, Computer: 0
+Choose rock, paper, or scissors (or 'q' to quit): paper
+Computer chose: rock
+Player wins
+Score - Player: 1, Computer: 0
+Choose rock, paper, or scissors (or 'q' to quit): paper
+Computer chose: scissors
+Computer wins
+Score - Player: 1, Computer: 1
+Choose rock, paper, or scissors (or 'q' to quit): rock
+Computer chose: rock
+Draw
+Score - Player: 1, Computer: 1
+Choose rock, paper, or scissors (or 'q' to quit): scissors
+Computer chose: paper
+Player wins
+Score - Player: 2, Computer: 1
+Choose rock, paper, or scissors (or 'q' to quit): q
+Game Over
+
+Final Score
+-----------
+Player  : 2
+Computer: 1
+```
 
 ## Getting started
 
