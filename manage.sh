@@ -6,8 +6,8 @@ set -e
 # Define the directory for the virtual environment
 VENV_DIR=".venv"
 
-# TODO: Define the script to run
-SCRIPT="src/game.py"
+# Define the script to run
+SCRIPT="src/cli.py"
 
 # Function to set up the virtual environment
 setup_venv() {
