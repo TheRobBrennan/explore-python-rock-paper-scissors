@@ -1,3 +1,11 @@
+import sys
+import os
+
+# Add the src directory to sys.path to allow for absolute imports
+src_dir = os.path.dirname(os.path.abspath(__file__))
+if src_dir not in sys.path:
+    sys.path.append(src_dir)
+
 from game import RockPaperScissors
 
 def main():
