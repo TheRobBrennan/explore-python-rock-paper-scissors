@@ -15,7 +15,9 @@ def main():
 
     print("Welcome to Rock, Paper, Scissors!")
     while True:
-        player_choice = input("Choose rock, paper, or scissors (or 'q' to quit): ").lower()
+        print("Choose rock, paper, or scissors (or 'q' to quit): ", end='', flush=True)
+        player_choice = input().lower()        
+
         if player_choice == 'q':
             break
         if player_choice not in game.choices:
