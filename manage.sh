@@ -7,7 +7,7 @@ set -e
 VENV_DIR=".venv"
 
 # TODO: Define the script to run
-SCRIPT="main.py"
+SCRIPT="src/game.py"
 
 # Function to set up the virtual environment
 setup_venv() {
@@ -20,8 +20,13 @@ setup_venv() {
         # Upgrade pip
         pip install --upgrade pip
 
-        # Install dependencies
-        pip install -r requirements.txt
+        # Check if requirements.txt exists
+        if [[ -f "requirements.txt" ]]; then
+            # Install dependencies
+            pip install -r requirements.txt
+        else
+            echo "requirements.txt not found, skipping dependency installation."
+        fi
 
         # Deactivate the virtual environment
         deactivate
