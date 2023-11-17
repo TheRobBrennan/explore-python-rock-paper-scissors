@@ -1,3 +1,5 @@
+import random
+
 class RockPaperScissors:
     def __init__(self):
         self.choices = ['rock', 'paper', 'scissors']
@@ -14,5 +16,4 @@ class RockPaperScissors:
         return "Computer wins"
 
     def get_computer_choice(self):
-        import random
         return random.choice(self.choices)
